@@ -9,7 +9,7 @@
     "lint": "./node_modules/.bin/eslint build src",
     "test": "./node_modules/.bin/mocha",
     "start": "cross-env NODE_ENV=production node src/server.js",
-    "debug": "cross-env DEBUG=todo-backend:server src/server.js"
+    "debug": "cross-env DEBUG=todo-backend:server node src/server.js"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -23,7 +23,6 @@
     "helmet": "^3.9.0",
     "knex": "^0.14.0",
     "morgan": "~1.9.0",
-    "pm2": "^2.7.2",
     "serve-favicon": "~2.4.5",
     "sqlite3": "^3.1.13"
   },
